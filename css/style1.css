@@ -1,0 +1,396 @@
+/*==========initial declare=============*/
+*{padding: 0; margin: 0; }
+
+/*----------imagae part start------------------------*/
+
+.top-header{
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    clip-path: polygon(100% 0%,100% 75%,50% 100%,0% 75%,0 0);
+
+}
+a#xxx{
+  color: white;
+  opacity: 70%;
+}
+a#xxx:hover{
+  color: black;
+  background-color: white;
+  transition: .7s;
+}
+/*----------imagae part end------------------------*/
+
+img.image-1{
+  border: 2px solid;
+    border-radius: 30px;
+}
+
+#navbar-1{
+    color: white;
+  
+}
+#header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    transition: all 0.5s;
+    z-index: 997;
+}
+#header.header-fixed {
+    background: linear-gradient(45deg, #1de099, #1dc8cd);
+    padding: 10px 0;
+    height: 65px;
+    transition: all 0.7s;
+}
+
+.center-div {
+    width: 100%;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(0%,220px);
+    font-family: sans-serif;
+    text-align: center;
+
+}
+.header-button a {
+    border: 1px solid #fff;
+    border-radius: 100px;
+    margin: 0 5px;
+    padding: 12px 35px;
+    color: white;
+    
+}
+h1.font-weight-bold{
+    color: white;
+}
+.header-button a:hover{
+    text-decoration: none;
+    transition: .5s;
+    color: white;
+    background-color: black;
+}
+/*---------------------box part start==================*/
+.box{
+  padding: 40px 0px 80px 0px;
+  
+  font-family: sans-serif;
+}
+.row{
+  margin: 0px 20px 0px 20px;
+  line-height: normal;
+
+}
+.inside-style{
+  text-align: justify;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#slider-style{
+  text-align: center;
+  border-radius: 3px;
+  transition: 0.3s;
+  padding: 50px!important;
+  background-color: rgba(90, 183, 206, 0.26);
+  border: 1px solid;
+}
+#slider-style:hover{
+  box-shadow: 0 0 20px 0 rgba(204, 181, 181, 0.64);
+  transform: translate(0px ,-20px);
+  background-color: rgb(189, 213, 223);
+
+}
+/*---------------------box part end==================*/
+
+
+/*---------------scorling part -start-------------------*/
+.back-to-top:hover {
+    background: #ebb8b8;
+    color: #fff;
+
+}
+.back-to-top {
+    position: fixed;
+    display: none;
+    background: linear-gradient(45deg, #da2e2ed7 ,#cdd7cd73);
+    color: #fff;
+    padding: 2px 20px 8px 20px;
+    font-size: 16px;
+    border-radius: 4px 4px 0 0;
+    right: 15px;
+    bottom: 0;
+    transition: none;
+}
+/*---------------scorling part -end-------------------*/
+.carousel-inner{
+  text-align: center;
+   
+}
+/*---------------icon-------------*/
+.icon{
+  text-align: center;
+  font-size: 40px;
+  color: blue;
+  
+}
+/*=========progress======================*/
+#progresbar{
+  padding: 50px 80px 50px 80px;
+    margin: 0;
+} 
+  
+#progress-text{
+      width: 500px;
+      height: 357px;
+      padding-left: 146px;
+      text-align: center;
+      font-family: sans-serif;
+  
+    
+}
+#progresbar::after{
+  content: "";
+
+ 
+}
+.image-style::before{
+  background-color: rgba(90, 183, 206, 0.26);
+}
+
+.progress-top{
+  text-align: center;
+  padding: 60px 0px 60px 0px;
+  background: #c1cacb63;
+  margin: 40px 0px 40px 0px;
+}
+
+.progress-text{
+  padding: 0px 0px 0px 20px;
+  font-size: 21px;
+  font-family: sans-serif;
+
+}
+.progress{
+  margin: 20px;
+  height: 10px;
+  border: 1px solid lightgray;
+}
+  
+
+img.image-style{
+  float: right;
+}
+
+#slider-style{
+  text-align: center;
+
+}
+/*============valid form=================*/
+.valide-form{
+
+  height: 100vh;
+  width: 100%;
+  padding: 80px 0;
+  position: relative;
+}
+#image-part{
+  background-attachment: fixed;
+}
+#contactform{
+    margin: 0;
+    padding: 30px 0px 30px 0px;
+}
+#Services{
+    background-color: #fafafa;
+    padding: 40px 0 40px 0px;
+  }
+
+#Services .service-box {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 10px;
+    perspective: 1000px;
+    -webkit-perspective: 1000px;
+  }
+  #Services .service-icon {
+    width: 100%;
+    height: 220px;
+    padding: 20px;
+    text-align: center;
+    transition: all .5s ease;
+  }
+  #Services .service-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0;
+    width: 100%;
+    height: 220px;
+    padding: 20px;
+    text-align: center;
+    transition: all .5s ease;
+    background-color: #474747;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    -webkit-transform: translateY(110px) rotateX(-90deg);
+   -ms-transform: translateY(110px) rotateX(-90deg);
+   transform: translateY(110px) rotateX(-90deg);
+  }
+  #Services .service-box .service-icon .front-content {
+    position: relative;
+    top: 80px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  #Services .service-box .service-icon .front-content i {
+    font-size: 28px;
+    color: #fff;
+    font-weight: normal;
+    margin-bottom: 20px;
+  }
+  #Services .service-box .service-icon .front-content h3 {
+    font-size: 15px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+  }
+  #Services .service-box .service-content h3 {
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+  #Services .service-box .service-content p {
+    font-size: 13px;
+    color: #fff;
+    margin: 0;
+  }
+  #Services .service-box .yellow {
+    background-color: #02b3e4;
+  }
+  #Services .service-box .orange {
+    background-color: #02ccba;
+  }
+  #Services .service-box .red {
+    background-color: #02BED2;
+  }
+  #Services .service-box .grey {
+    background-color: #47c6d0;
+  }
+  #Services .service-box:hover .service-icon {
+    opacity: 0;
+    -webkit-transform: translateY(-110px) rotateX(90deg);
+    -moz-transform: translateY(-110px) rotateX(90deg);
+    -ms-transform: translateY(-110px) rotateX(90deg);
+    transform: translateY(-110px) rotateX(90deg);
+  }
+  #Services .service-box:hover .service-content {
+    opacity: 1;
+    -webkit-transform: rotateX(0);
+    -moz-transform: rotateX(0);
+    -ms-transform: rotateX(0);
+    transform: rotateX(0);
+  }
+/*============footer part==============*/
+  .footer{
+    background: black;
+    color: aliceblue;
+    text-align: center;
+    /* padding: 400px; */
+    /* margin: 300px; */
+    padding: 100px 0px 100px 0px;
+}
+  
+#font-style2{
+  font-size: 40px;
+  color: white;
+  background:blue;
+  padding: 10px;
+}
+
+.each-portfolio{
+  padding: 30px;
+}
+
+
+section.My.skill{
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: rgba(69, 85, 88, 0.26);
+}
+#icon-style{
+  color: white;
+ 
+}
+.oh-no{
+  background: url(gallery-6.jpg);
+  padding:40px;
+}
+
+/*--------------footer part end=========*/
+
+
+/*----------------media-file-----------------*/
+
+@media(max-width: 700px){
+    
+   .progress-top{
+     padding: 40px;
+   }
+   p#progress-text{
+     display: none;
+   }
+   img.image-style{
+    width: inherit!important;
+    height: auto;
+padding-bottom: 46px;
+   }
+   #progresbar{
+     padding: 0px;
+   }
+   #navbarSupportedContent{
+     text-align: center;
+     background-color: black;
+     opacity: 60%;
+   }
+   #contactform{
+     text-align: center;
+     text-align: center;
+     /* padding-left: 55px; */
+     padding-left: 57px;
+    
+   }
+   #contact-style1{
+     text-align: center;
+   }
+   .portfolio-wrapper{
+     text-align: center;
+     text-align: center;
+     background-color: rgba(0,0,0,0.3);
+     
+   }
+   .top-header{
+    background: antiquewhite;
+
+   }
+
+  button.navbar-toggler{
+     background-color: rgba(214, 205, 205, 0.699);
+   }
+   h1.font-weight-bold{
+    font-size: 40px;
+   }
+   .row{
+     margin: 0px;
+   }
+   .contract-us{
+     padding-left: 60px;
+   }
+}
+/*-------------media file end---------------------*/
